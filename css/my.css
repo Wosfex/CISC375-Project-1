@@ -9,7 +9,6 @@ html{
 
 h2{
     font-size:1.25rem;
-
     text-align: center;
     font-weight: bold;
 }
@@ -26,6 +25,9 @@ li{
     font-size: 16px;
     font-size: 1rem;
 }
+
+
+
 .prussian{
     border-bottom: 0.5rem solid #003153 ;
 }
@@ -46,8 +48,12 @@ li{
     border-color:black;
     border: 1px solid black;
     padding: 0.5rem;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
 }
-
+.noBottomBorder{
+    border-bottom:0;
+}
 .center {
     text-align: center;
     padding:0.5rem;
