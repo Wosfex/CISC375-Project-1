@@ -3,25 +3,26 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>PROJECTS</title>
+	<title>Projects</title>
 	<link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/my.css">
 </head>
 <body>
     <div class="off-canvas-wrapper">
         <!-- Your menu or Off-canvas content goes here -->
-        <div class="off-canvas position-left" id="offCanvas" data-off-canvas>
+        <div class="off-canvas position-left" id="offCanvas" style="background-color:rgb(88, 88, 88)" data-off-canvas>
             <!-- Close button -->
-            <button class="close-button" aria-label="Close menu" type="button" data-close>
+            <button class="close-button hide-for-medium" aria-label="Close menu" type="button" data-close>
                 <span aria-hidden="true">&times;</span>
             </button>
 
             <!-- Menu -->
             <ul class="vertical menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="fun.html">Fun Stuff</a></li>
-                <li><a href="testing.html">Testing Stuff</a></li>
+                <li><a href="index.html" style="color:white;">Home</a></li>
+                <li><a href="projects.html" style="color:white;">Projects</a></li>
+                <li><a href="resume.html" style="color:white;">Resume</a></li>
+                <li><a href="fun.html" style="color:white;">Fun Stuff</a></li>
+                <li><a href="testing.html" style="color:white;">Testing Stuff</a></li>
             </ul>
         </div>
         <!-- Your page content lives here -->
@@ -29,24 +30,41 @@
             <!-- main content within a `grid-container` -->
             <div class="grid-container">
                 <!-- `grid-x` represents a row -->
+
+                <!-- Button Stuff down here-->                
                 <div class="grid-x grid-padding-x">
-                    <div class="cell small-6 large-4" style="background-color: blue;">Small 2 / Large 6</div>
-                    <div class="cell small-6 large-8" style="background-color: green;">Small 2 / Large 6</div>
+                    <!-- Replacing the Menu item with a hamburger menu when small-->
+                    <div class="cell small-1 large-auto hide-for-medium" style="background-color:rgb(88, 88, 88)">
+                        <br>
+                        <button type="button" class="cell small-1 large-auto menu-icon hide-for-medium center" data-toggle="offCanvas"></button>
+                    </div>
+                    <button type="button" class="cell small-2 medium-2 large-4 center button2 hide-for-small-only" data-toggle="offCanvas">Open Menu</button>
+                    <div class="cell small-11 medium-10 large-8 heading1 center">
+                        <h1>Andrew Steichen</h1>
+                    </div>
                 </div>
                 
+                <br>
+                <!-- Content Stuff down here-->
                 <div class="grid-x grid-padding-x">
-                    <div class="cell small-6 medium-4 large-2" style="background-color: yellow;">One</div>
-                    <div class="cell small-6 medium-4 large-2" style="background-color: red;">Two</div>
-                    <div class="cell small-6 medium-4 large-2" style="background-color: gray;">Three</div>
-                    <div class="cell small-6 medium-4 large-2" style="background-color: purple;">Four</div>
-                    <div class="cell small-6 medium-4 large-2" style="background-color: orange;">Five</div>
-                    <div class="cell small-6 medium-4 large-2" style="background-color: lightblue;">Six</div>
+                    <div class="cell small-3 medium-2 large-2 content1">MAJOR:</div>
+                    <div class="cell small-9 medium-6 large-6 content1">COMPUTER SCIENCE</div>
+                    <div class ="cell small-12 medium-4 large-4 content1">IMAGE</div>
+
+                    <div class="cell small-3 medium-2 large-2 content1">GOALS</div>
+                    <div class="cell small-9 medium-6 large-6 content1">Make some money, go skiing, and go camping a bunch</div>
+                    <div class ="cell small-12 medium-4 large-4 content1">IMAGE</div>
+
+                    <div class="cell small-3 medium-2 large-2 content1">header</div>
+                    <div class="cell small-9 medium-6 large-6 content1">CONTENT TEXT</div>
+                    <div class ="cell small-12 medium-4 large-4 content1">IMAGE</div>
 
                 </div>
-                
-                <div class="grid-x grid-padding-x">
-                    <button type="button" class="cell large-auto button" data-toggle="offCanvas">Open Menu</button>
-                </div>
+
+
+
+
+
             </div>
         </div>
     </div>

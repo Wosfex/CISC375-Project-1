@@ -1,10 +1,85 @@
 @charset "UTF-8";
+html{
+    color: black;
+    text-align: center;
+    font-size: 16px;
+    font-size: 1rem;
+    background-color: white;
+}
 
-.test123{
-    background-color: lightcoral;
-    color: blue;
-}        
-test123{
-    background-color: lightcoral;
-    color: blue;
-} 
+h2{
+    font-size:1.25rem;
+
+    text-align: center;
+    font-weight: bold;
+}
+h3{
+    font-size:1rem;
+    text-align: center;
+    font-weight: bold;
+}
+ul{
+    padding:0;
+    font-size:0;
+}
+li{
+    font-size: 16px;
+    font-size: 1rem;
+}
+.prussian{
+    border-bottom: 0.5rem solid #003153 ;
+}
+
+.heading1{
+    background-color: white;
+    border: 1rem solid black;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.heading2{
+    background-color:lightgray;
+}
+
+.content1{
+    text-align: left;
+    border-color:black;
+    border: 1px solid black;
+    padding: 0.5rem;
+}
+
+.center {
+    text-align: center;
+    padding:0.5rem;
+  }
+
+
+   /* Redo of the button class from foundation, only a bit of it, with a few small edits, mainly:
+   -font_size
+   -white-space
+   -Colors in the bottom
+   -background-color
+   -text color:white;
+   */
+  .button2 {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 0;
+    padding: 0.85em 1em;
+    background-color: rgb(88, 88, 88);
+    color: white;
+    border-radius: 0;
+    -webkit-transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    transition: background-color 0.25s ease-out, color 0.25s ease-out;
+    font-family: inherit;
+    font-size: 1rem;
+    -webkit-appearance: none;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    cursor: pointer; }
+    [data-whatinput='mouse'] .button2 {
+      outline: 0; }
+      .button2:hover, .button2:focus {
+        background-color: lightgray;
+        color: black; }
